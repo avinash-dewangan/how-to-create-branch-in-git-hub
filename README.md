@@ -1,53 +1,57 @@
-# How to Create branch in git hub common line
+# How to Create branch in git hub commond line
 
-\$ git status
+$ git status
 
-//create new branch
-\$ git branch alpha
+# create new branch
+$ git branch alpha
 
-//list of branch
-\$ git branch --list
+# list of branch
+$ git branch --list
 alpha
 
 - master
 
-//swich the branch
-\$ git checkout alpha
-Switched to branch 'alpha'
+# swich the branch
+$ git checkout alpha
 
-// list of bracnh
-\$ git branch
+# Switched to branch 'alpha'
+
+# list of bracnh
+$ git branch
 
 - alpha
   master
 
-//crate new brach and switched
-\$ git checkout -b beta
-Switched to a new branch 'beta'
+# crate new brach and switched
+$ git checkout -b beta
 
-// list of branch
+# Switched to a new branch 'beta'
 
-\$ git branch
+# list of branch
+
+$ git branch
 alpha
 
 - beta
   master
 
-//switch the branch
-\$ git checkout alpha
-Switched to branch 'alpha'
+# switch the branch
+$ git checkout alpha
 
-//create new branch
-#creating new file
-\$ touch style.css
+# Switched to branch 'alpha'
 
-\$ git status
+# create new branch
 
-\$ git add .
+# creating new file
+$ touch style.css
 
-\$ git status
+$ git status
 
-\$ git commit -m "intial"
+$ git add .
+
+$ git status
+
+$ git commit -m "intial"
 [alpha e1b923b] intial
 1 file changed, 3 insertions(+)
 create mode 100644 style.css
