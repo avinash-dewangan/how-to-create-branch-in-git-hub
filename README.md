@@ -1,4 +1,4 @@
-#How to Create branch in git hub common line
+# How to Create branch in git hub common line
 
 \$ git status
 
@@ -57,3 +57,17 @@ username
 password
 
 and then check to github
+
+
+
+# How to pull request and conflict resolve in git hub
+
+$ git pull origin master
+
+# if any conflict so resolve it then
+
+$ git add .
+
+$ git status
+
+$ git push origin master
