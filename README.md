@@ -1,3 +1,7 @@
+<html>
+  <head>
+  </head>
+  <body>
 # How to do it with just the command line
 1. Create a new repository on GitHub and initialize it with a README file
 2. Create a folder on your local machine
@@ -139,4 +143,8 @@ git push origin --delete remoteBranchName
 - [deleted]         product-curd-operation
 
 <button>submit</button>
+
+  </body>
+  <html>
+    
 
