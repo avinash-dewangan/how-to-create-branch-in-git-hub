@@ -109,28 +109,28 @@ git push origin --delete remoteBranchName
 - First thing commit the you local master branch then perform command
 
 - for local merge
-<div>
+
 $ git merge local branch
 $ git merge product-curd-operation
 Updating c9a484b..e7c4284
 Fast-forward
-</div?
+
   
 - for checking local merge
-<div>
+
 $ git merge local branch
 -$ git merge product-curd-operation
 Already up to date.
-</div>
 
 
-- for local branch delete
 
-<div>
+### for local branch delete
+
+
 git branch -d localbranch
 -$ git branch -d product-curd-operation
 Deleted branch product-curd-operation (was e7c4284).
-</div>
+
 
 <div>
 for remote branch delete
