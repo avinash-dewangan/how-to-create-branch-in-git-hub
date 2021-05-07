@@ -81,6 +81,8 @@ and then check to github
 
 
 
+
+
 # How to pull request and conflict resolve in git hub
 
 $ git pull origin master
@@ -99,3 +101,33 @@ git branch -d localBranchName
 
 // delete branch remotely
 git push origin --delete remoteBranchName
+
+
+
+
+# How to merge in Git
+- First thing commit the you local master branch then perform command
+
+for local merge
+$ git merge local branch
+$ git merge product-curd-operation
+Updating c9a484b..e7c4284
+Fast-forward
+
+for checking local merge
+$ git merge local branch
+$ git merge product-curd-operation
+Already up to date.
+
+for local branch delete
+git branch -d localbranch
+$ git branch -d product-curd-operation
+Deleted branch product-curd-operation (was e7c4284).
+
+for remote branch delete
+$ git push origin --delete product-curd-operation
+To https://github.com/avinash-dewangan/react-redux-shopping-cart-app.git
+ - [deleted]         product-curd-operation
+
+
+
