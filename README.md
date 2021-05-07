@@ -109,23 +109,23 @@ git push origin --delete remoteBranchName
 - First thing commit the you local master branch then perform command
 
 for local merge
-$ git merge local branch
-$ git merge product-curd-operation
+-$ git merge local branch
+-$ git merge product-curd-operation
 Updating c9a484b..e7c4284
 Fast-forward
 
 for checking local merge
-$ git merge local branch
-$ git merge product-curd-operation
+-$ git merge local branch
+-$ git merge product-curd-operation
 Already up to date.
 
 for local branch delete
 git branch -d localbranch
-$ git branch -d product-curd-operation
+-$ git branch -d product-curd-operation
 Deleted branch product-curd-operation (was e7c4284).
 
 for remote branch delete
-$ git push origin --delete product-curd-operation
+-$ git push origin --delete product-curd-operation
 To https://github.com/avinash-dewangan/react-redux-shopping-cart-app.git
  - [deleted]         product-curd-operation
 
