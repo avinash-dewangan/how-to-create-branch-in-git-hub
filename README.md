@@ -1,150 +1,131 @@
-<html>
-  <head>
-  </head>
-  <body>
-# How to do it with just the command line
-1. Create a new repository on GitHub and initialize it with a README file
-2. Create a folder on your local machine
-3. Open terminal and move to that folder
-$ cd FOLDER
-4. Add the remote URL as origin
-$ git remote add origin https://github.com/USERNAME/REPOSITORY_NAME.git
-5. Now using the pull command, you can ‘pull’ down the README file onto the local folder
-a. $ git pull origin master
-6. Add your current files in the local folder to the staging area
-a. $ git add –-all
-7. Commit your changes
-$ git commit -m "your commit message e.g. First commit"
-8. Push your changes to the master branch
-$ git push origin master
+<p align="center">
+  <a href="https://docsify.js.org">
+    <img alt="docsify" src="./docs/_media/icon.svg">
+  </a>
+</p>
 
+<p align="center">
+  A magical documentation site generator.
+</p>
 
-# How to Create branch in git hub commond line
+<p align="center">
+  <a href="#backers"><img alt="Backers on Open Collective" src="https://opencollective.com/docsify/backers/badge.svg?style=flat-square"></a>
+  <a href="#sponsors">
+    <img alt="Sponsors on Open Collective" src="https://opencollective.com/docsify/sponsors/badge.svg?style=flat-square"></a>
+  <a><img src="https://github.com/docsifyjs/docsify/workflows/Unit%20tests%20Suite/badge.svg?branch=develop&amp;event=push" alt="Unit tests Suite"></a>
+  <a><img src="https://github.com/docsifyjs/docsify/workflows/Linting%20Checks/badge.svg?branch=develop&amp;event=push" alt="Linting Checks"></a>
+  <a><img src="https://github.com/docsifyjs/docsify/workflows/Testing%20the%20e2e%20test%20suites/badge.svg?branch=develop&amp;event=push" alt="Testing the e2e test suites"></a>
+  <a href="https://www.npmjs.com/package/docsify"><img alt="npm" src="https://img.shields.io/npm/v/docsify.svg?style=flat-square"></a>
+  <a href="https://github.com/QingWei-Li/donate"><img alt="donate" src="https://img.shields.io/badge/%24-donate-ff69b4.svg?style=flat-square"></a>
+  <a href="https://discord.gg/3NwKFyR"><img alt="Join Discord community and chat about Docsify" src="https://img.shields.io/discord/713647066802421792.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2&cacheSeconds=60"></a>
+  <a href="https://gitpod.io/#https://github.com/docsifyjs/docsify"><img src="https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod" alt="Gitpod Ready-to-Code"></a>
+</p>
 
-$ git status
+<p align="center">Gold Sponsor via <a href="https://opencollective.com/docsify">Open Collective</a></p>
 
-# create new branch
-$ git branch alpha
+<p align="center">
+  <a href="https://opencollective.com/docsify/order/3254">
+    <img src="https://opencollective.com/docsify/tiers/gold-sponsor.svg?avatarHeight=36">
+  </a>
+</p>
 
-# list of branch
-$ git branch --list
-alpha
+## Links
 
-- master
+- [`develop` branch preview](https://docsifyjs.netlify.com/)
+- [Documentation](https://docsify.js.org)
+- [CLI](https://github.com/docsifyjs/docsify-cli)
+- CDN: [UNPKG](https://unpkg.com/docsify/) | [jsDelivr](https://cdn.jsdelivr.net/npm/docsify/) | [cdnjs](https://cdnjs.com/libraries/docsify)
+- [Awesome docsify](https://github.com/docsifyjs/awesome-docsify)
+- [Community chat](https://discord.gg/3NwKFyR)
 
-# swich the branch
-$ git checkout alpha
+## Features
 
-# Switched to branch 'alpha'
+- No statically built html files
+- Simple and lightweight
+- Smart full-text search plugin
+- Multiple themes
+- Useful plugin API
+- Compatible with IE11
+- Support SSR ([example](https://github.com/docsifyjs/docsify-ssr-demo))
+- Support embedded files
 
-# list of bracnh
-$ git branch
+## Quick start
 
-- alpha
-  master
+Look at [this tutorial](https://docsify.js.org/#/quickstart)
 
-# crate new brach and switched
-$ git checkout -b beta
+[![Edit 307qqv236](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/307qqv236)
 
-# Switched to a new branch 'beta'
+## Showcase
 
-# list of branch
+These projects are using docsify to generate their sites. Pull requests welcome :blush:
 
-$ git branch
-alpha
+Move to [awesome-docsify](https://github.com/docsifyjs/awesome-docsify#showcase)
 
-- beta
-  master
+## Similar projects
 
-# switch the branch
-$ git checkout alpha
+| Project                                          | Description                              |
+| ------------------------------------------------ | ---------------------------------------- |
+| [docute](https://github.com/egoist/docute)       | 📜 Effortlessly documentation done right |
+| [docpress](https://github.com/docpress/docpress) | Documentation website generator          |
 
-# Switched to branch 'alpha'
+## Contributing
 
-# create new branch
+### Online one-click setup for Contributing
 
-# creating new file
-$ touch style.css
+You can use Gitpod(A free online VS Code-like IDE) for contributing. With single click it'll launch a workspace and automatically:
 
-$ git status
+- clone the docsify repo.
+- install the dependencies.
+- start `npm run dev`.
 
-$ git add .
+So that you can start straight away.
 
-$ git status
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/docsifyjs/docsify)
 
-$ git commit -m "intial"
-[alpha e1b923b] intial
-1 file changed, 3 insertions(+)
-create mode 100644 style.css
+- Fork it!
+- Create your feature branch: `git checkout -b my-new-feature`
+- Commit your changes: `git add . && git commit -m 'Add some feature'`
+- Push to the branch: `git push origin my-new-feature`
+- Submit a pull request
 
-git push --set-upstream origin alpha
-username
-password
+## Development
 
-and then check to github
+```bash
+npm run bootstrap && npm run dev
+```
 
+## Backers
 
+Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/docsify#backers)]
 
+<a href="https://opencollective.com/docsify#backers" target="_blank"><img src="https://opencollective.com/docsify/backers.svg?width=890"></a>
 
+## Sponsors
 
-# How to pull request and conflict resolve in git hub
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/docsify#silver-sponsors)]
 
-$ git pull origin master
+<a href="https://opencollective.com/docsify/silver-sponsors/0/website" target="_blank"><img src="https://opencollective.com/docsify/silver-sponsors/0/avatar.svg"></a>
+<a href="https://opencollective.com/docsify/silver-sponsors/1/website" target="_blank"><img src="https://opencollective.com/docsify/silver-sponsors/1/avatar.svg"></a>
+<a href="https://opencollective.com/docsify/silver-sponsors/2/website" target="_blank"><img src="https://opencollective.com/docsify/silver-sponsors/2/avatar.svg"></a>
+<a href="https://opencollective.com/docsify/silver-sponsors/3/website" target="_blank"><img src="https://opencollective.com/docsify/silver-sponsors/3/avatar.svg"></a>
+<a href="https://opencollective.com/docsify/silver-sponsors/4/website" target="_blank"><img src="https://opencollective.com/docsify/silver-sponsors/4/avatar.svg"></a>
+<a href="https://opencollective.com/docsify/silver-sponsors/5/website" target="_blank"><img src="https://opencollective.com/docsify/silver-sponsors/5/avatar.svg"></a>
+<a href="https://opencollective.com/docsify/silver-sponsors/6/website" target="_blank"><img src="https://opencollective.com/docsify/silver-sponsors/6/avatar.svg"></a>
+<a href="https://opencollective.com/docsify/silver-sponsors/7/website" target="_blank"><img src="https://opencollective.com/docsify/silver-sponsors/7/avatar.svg"></a>
+<a href="https://opencollective.com/docsify/silver-sponsors/8/website" target="_blank"><img src="https://opencollective.com/docsify/silver-sponsors/8/avatar.svg"></a>
+<a href="https://opencollective.com/docsify/silver-sponsors/9/website" target="_blank"><img src="https://opencollective.com/docsify/silver-sponsors/9/avatar.svg"></a>
 
-# if any conflict so resolve it then
+## Contributors
 
-$ git add .
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+<a href="https://github.com/docsifyjs/docsify/graphs/contributors"><img src="https://opencollective.com/docsify/contributors.svg?width=890" /></a>
 
-$ git status
+## License
 
-$ git push origin master
+[MIT](LICENSE)
 
+## Special Thanks
 
-// delete branch locally
-git branch -d localBranchName
+_Vercel_ has given us a Pro account.
 
-// delete branch remotely
-git push origin --delete remoteBranchName
-
-
-
-
-# How to merge in Git
-- First thing commit the you local master branch then perform command
-
-- for local merge
-
-- $ git merge local branch
-- $ git merge product-curd-operation
-- Updating c9a484b..e7c4284
-- Fast-forward
-
-  
-- for checking local merge
-
-- $ git merge local branch
-- $ git merge product-curd-operation
-- Already up to date.
-
-
-
-- for local branch delete
-
-
-- git branch -d localbranch
-- $ git branch -d product-curd-operation
-- Deleted branch product-curd-operation (was e7c4284).
-
-
-
-- for remote branch delete
-- $ git push origin --delete product-curd-operation
-- To https://github.com/avinash-dewangan/react-redux-shopping-cart-app.git
-- [deleted]         product-curd-operation
-
-<button>submit</button>
-
-  </body>
-  <html>
-    
-
+<a href="https://vercel.com/?utm_source=docsifyjsdocs" target="_blank"><img src="docs/_media/vercel_logo.svg" width="100px"></a>
