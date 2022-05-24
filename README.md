@@ -28,6 +28,9 @@ $ git branch alpha
 $ git branch --list
 alpha
 
+# list of all local and remote branch
+$ git branch -a
+
 - master
 
 # swich the branch
