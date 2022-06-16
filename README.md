@@ -17,9 +17,9 @@ $ git commit -m "your commit message e.g. First commit"
 $ git push origin master
 
 # If User setting user name and password
-git config --global user.name "fname lname"
-git config --global user.email "example@gmail.com"
-git config --global user.password "secret"
+$git config --global user.name "fname lname"
+$git config --global user.email "example@gmail.com"
+$git config --global user.password "secret"
 
 # How to Create branch in git hub commond line
 
