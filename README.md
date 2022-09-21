@@ -148,4 +148,10 @@ git push origin --delete remoteBranchName
 - [deleted]         product-curd-operation
 
 
+# How to push master branch when currently dev branch
+- First commit dev branch
+- $ git push origin dev
+- then commit master branch below command
+- $ git push origin dev:master
+
 
