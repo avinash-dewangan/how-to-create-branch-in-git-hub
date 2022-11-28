@@ -155,3 +155,7 @@ git push origin --delete remoteBranchName
 - $ git push origin dev:master
 
 
+# CheckOut old  Commited Checkout
+ git checkout a1f5e04
+
+
