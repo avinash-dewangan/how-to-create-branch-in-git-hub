@@ -157,5 +157,8 @@ git push origin --delete remoteBranchName
 
 # CheckOut old  Commited Checkout
  git checkout a1f5e04
+ 
+# Stash
+ for revert changes
 
 
