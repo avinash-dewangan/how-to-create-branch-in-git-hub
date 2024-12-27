@@ -161,4 +161,33 @@ git push origin --delete remoteBranchName
 # Stash
  for revert changes
 
+## Steps to Override master with dev:
+
+Switch to the dev branch:
+```
+git checkout dev
+``
+Force push dev to master:
+```
+git push origin dev:master --force
+```
+This command pushes the dev branch to the master branch on the remote, overwriting the existing history.
+
+Alternatively: Merge dev into master (Safer Approach)
+If you want to preserve the master branch history, you can merge the dev branch instead of overriding:
+
+Switch to master:
+
+```
+git checkout master
+```
+Merge dev into master:
+```
+git merge dev
+```
+Push the changes to the remote:
+```
+git push origin master
+```
+
 
