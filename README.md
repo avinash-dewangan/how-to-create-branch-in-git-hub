@@ -166,7 +166,7 @@ git push origin --delete remoteBranchName
 Switch to the dev branch:
 ```
 git checkout dev
-``
+```
 Force push dev to master:
 ```
 git push origin dev:master --force
