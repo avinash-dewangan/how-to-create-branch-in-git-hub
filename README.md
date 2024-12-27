@@ -190,4 +190,76 @@ Push the changes to the remote:
 git push origin master
 ```
 
+# Reverting Local Changes in Git
+
+## **1. Revert Unstaged Changes (Unmodified Files)**
+If you have made changes to files but have not staged them (using `git add`), you can discard them:
+
+```bash
+git restore <file-name>
+```
+
+To discard changes to all files:
+```bash
+git restore .
+```
+
+---
+
+## **2. Revert Staged Changes**
+If you have staged changes (added them to the index using `git add`), you can unstage them:
+
+```bash
+git reset HEAD <file-name>
+```
+
+To unstage all changes:
+```bash
+git reset HEAD .
+```
+
+---
+
+## **3. Revert to the Last Committed State**
+If you want to discard **all changes** (both staged and unstaged) and revert the working directory to the last committed state:
+
+```bash
+git reset --hard HEAD
+```
+
+---
+
+## **4. Revert Changes to a Specific Commit**
+If you want to undo changes back to a specific commit but keep your working directory clean:
+
+```bash
+git reset --hard <commit-hash>
+```
+
+---
+
+## **5. Undo a Specific File to Last Commit**
+If you want to revert a specific file to the last committed state:
+
+```bash
+git checkout -- <file-name>
+```
+
+---
+
+## **6. Revert a Commit (Without Losing Changes)**
+If you've already committed the changes but want to revert them without losing the history, use:
+
+```bash
+git revert <commit-hash>
+```
+
+This creates a new commit that reverses the changes of the specified commit.
+
+---
+
+## **Important Notes:**
+- Be careful with `git reset --hard` and `git checkout --` as they will permanently discard your changes.  
+- Always ensure that any important changes are saved or backed up before reverting.
+
 
